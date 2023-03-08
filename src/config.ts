@@ -5,7 +5,7 @@ export const SITE = {
   author: "Yannick Seeger",
   desc: "Blog by Yannick Seeger about web development, programming, and more.",
   title: "Yannick Seeger",
-  ogImage: "astropaper-og.jpg",
+  ogImage: "logo.png",
   lightAndDarkMode: true,
   postPerPage: 3,
 };
