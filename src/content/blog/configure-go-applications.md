@@ -12,14 +12,20 @@ description:
   How to configure your Go applications typesafe with environment variables.
 ---
 
-In the past I’ve been trying a lot of configuration formats like JSON, YAML, properties and much more. But in the recent past I see myself just using **environment variables**.
+As a developer, I've experimented with various configuration formats over the years, including JSON, YAML, and properties files, among others. However, in recent times, I find myself increasingly relying on **environment variables** to manage configuration values.
 
-In the modern cloud age where we rely heavily on stateless services, environment variables are a good fit, especially when using Docker or Kubernetes.
+In today's cloud-centric world, where stateless services are the norm, environment variables are an excellent fit, especially when working with containerization technologies like Docker or Kubernetes.
 
-To simplify my code for loading configurations and also make it typesafe, I make use of [godotenv](https://github.com/joho/godotenv) and [envconfig](https://github.com/kelseyhightower/envconfig).
+To simplify the code for loading configurations and ensure type safety, I use two Go packages, namely [godotenv](https://github.com/joho/godotenv) and [envconfig](https://github.com/kelseyhightower/envconfig).
 
-- godotenv loads .env files if they exist, what they usually do in my local development environments.
-- envconfig “loads” existing environment variables into a struct. It supports the use of struct tags to specify alternate, default, and required environment variables.
+- godotenv is a package that loads .env files if they exist. This is useful in local development environments, where you may not want to store sensitive configuration data in code.
+- envconfig, on the other hand, "loads" existing environment variables into a struct. It supports the use of struct tags to specify alternate, default, and required environment variables.
+
+*.env*
+```bash
+SERVICE_DEBUG=true
+SERVICE_POSTGRES_DSN=postgresql://user@localhost
+```
 
 *config.go*
 ```go
@@ -48,7 +54,10 @@ func LoadConfig() *Config {
 }
 ```
 
-If you have sucessfully built your configuration struct you can initialize your config as following:
+This code defines a `Config` struct that includes three configuration values, namely `Debug`, `PostgresDSN`, and `Port`. The `LoadConfig` function uses `godotenv` to load any values specified in a local `.env` file (if one exists), and `envconfig` to populate the `Config` struct with any environment variables that match the struct tags.
+
+
+Once you've successfully loaded your configuration struct, you can initialize your config as follows:
 
 *main.go*
 ```go
@@ -61,11 +70,7 @@ func main() {
   fmt.Println(cfg.PostgresDSN)
 }
 ```
+In this example, `main.go` simply calls `LoadConfig` and prints out the value of the `PostgresDSN` configuration variable.
 
-Your application now loads .env files if provided or existing environment variables.
+By leveraging environment variables and these two Go packages, you can create more portable, scalable, and secure applications that can be easily configured for different environments.
 
-*.env*
-```bash
-SERVICE_DEBUG=true
-SERVICE_POSTGRES_DSN=postgresql://user@localhost
-```

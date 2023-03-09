@@ -1,24 +1,24 @@
 @font-face {
   font-family: 'Jetbrains Mono';
-  src: url('assets/fonts/JetbrainsMono-Regular.ttf') format('truetype');
+  src: url('/assets/fonts/JetbrainsMono-Regular.ttf') format('truetype');
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'Jetbrains Mono';
-  src: url('assets/fonts/JetbrainsMono-Medium.ttf') format('truetype');
+  src: url('/assets/fonts/JetbrainsMono-Medium.ttf') format('truetype');
   font-weight: 500;
 }
 
 @font-face {
   font-family: 'Jetbrains Mono';
-  src: url('assets/fonts/JetbrainsMono-SemiBold.ttf') format('truetype');
+  src: url('/assets/fonts/JetbrainsMono-SemiBold.ttf') format('truetype');
   font-weight: 600;
 }
 
 @font-face {
   font-family: 'Jetbrains Mono';
-  src: url('assets/fonts/JetbrainsMono-Bold.ttf') format('truetype');
+  src: url('/assets/fonts/JetbrainsMono-Bold.ttf') format('truetype');
   font-weight: 700;
 }
 

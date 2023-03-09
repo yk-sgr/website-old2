@@ -12,16 +12,13 @@ description:
   A rant about flutter.
 ---
 
-On the one side I absolutly love Flutter. On the other side, I absolutly hate it.
+I have a love-hate relationship with Flutter. On one hand, I love it, but on the other hand, I hate it.
 
-A couple of weeks ago I messaged a collegue of mine (greetings to you Nic if you are reading this) like I did a couple of times before and complained about the sheer amount of **boilerplate** code you have to write or **generate**.
-
+A few weeks ago, I messaged my colleague Nic (if you're reading this, hello!) to complain about the sheer amount of boilerplate code that you have to write or generate.
 
 # Code Generation
 
-I absolutly hate it. You have SO MANY FILES in your project.
-
-For example if you are using [Freezed](https://pub.dev/packages/freezed) your project will look like this:
+I hate it. There are so many files in your project. For example, if you use [Freezed](https://pub.dev/packages/freezed), your project will look like this:
 
 ```bash
 blog.dart
@@ -38,13 +35,13 @@ comment.freezed.dart
 comment.g.dart
 ```
 
-Then, if you also want to use [Retrofit](https://pub.dev/packages/retrofit) you'll need another `.g.dart` file.
-Same goes for [Serializing JSON](https://pub.dev/packages/json_serializable), the new [Riverpod Code Generation](https://pub.dev/packages/riverpod) and so on.
+If you also want to use [Retrofit](https://pub.dev/packages/retrofit) you'll need another `.g.dart` file.
+The same goes for [Serializing JSON](https://pub.dev/packages/json_serializable), the new [Riverpod Code Generation](https://pub.dev/packages/riverpod) and so on.
 
 
 # Widget Trees
 
-Lately, because of work I'm doing a lot of web development and the code just is so much cleaner.
+Lately, I've been doing a lot of web development for work, and the code is so much cleaner:
 
 ```html
 <div>
@@ -58,7 +55,7 @@ Container(
 )
 ```
 
-At this point, it's still very much okay.
+So far, so good.
 
 ```html
 <div class="flex flex-col">
@@ -92,7 +89,7 @@ Column(
 )
 ```
 
-Now it's way more code. But let's take a look at a last example:
+Now it's a lot more code. But let's take a look at one more example:
 
 ```html
 <div class="flex flex-col">
@@ -150,9 +147,9 @@ Column(
 )
 ```
 
-You see this? It's so much code.
+Look at all that boilerplate code...
 
-Of course, this example could be simplified by splitting the code in seperate widgets, but that's the case with both languages / tools.
 
-# Will I be using Flutter in the future?
-Yes. Although I dont like writing much more code than I'm used to in other languages, I the developer experience is incredible. It's so easy to to create layouts and the hot reload is just amazing.
+Do you see this? It's an excessive amount of code. However, this example could be simplified by dividing the code into separate widgets, which is a common practice in both languages/tools.
+
+As for whether I will continue to use Flutter in the future, the answer is yes. Even though I don't prefer writing significantly more code than what I'm accustomed to in other languages, the overall developer experience is remarkable. The process of creating layouts is simple, and the hot reload feature is simply amazing.
