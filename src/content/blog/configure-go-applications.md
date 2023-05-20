@@ -2,7 +2,7 @@
 author: Yannick Seeger
 pubDatetime: 2020-11-11T10:11:24+02:00
 title: How I configure my Go Applications
-featured: true
+featured: false
 draft: false
 tags:
   - go
