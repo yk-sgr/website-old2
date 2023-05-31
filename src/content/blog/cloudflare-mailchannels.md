@@ -1,14 +1,13 @@
 ---
 author: Yannick Seeger
 pubDatetime: 2023-05-31T08:58:24+02:00
-title: Safe money sending emails - use Cloudflare
-featured: true
+title: "Sending Emails with MailChannels API using Cloudflare Workers: A Step-by-Step Guide"
+featured: false
 draft: false
 tags:
   - programming
 ogImage: ""
-description:
-  Most of us use either Sendgrid, Mailgun or AWS SES to send emails. What if I tell you, you can do that for free on Cloudflare?
+description: Learn how to send emails using the MailChannels API and Cloudflare Workers with our easy step-by-step guide.
 ---
 
 # MailChannels
