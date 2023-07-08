@@ -28,6 +28,14 @@ You might be wondering why I've chosen German proverbs as the niche for this exp
 
 Sprichwoerter.wiki is therefore dedicated to exploring, explicating, and providing insights into these pearls of wisdom, these "Sprichwörter", while serving as a playground for my programmatic SEO experiment.
 
+# The Tech Stack
+- NextJS hosted on Vercel (IRS): NextJS provides an excellent balance of power and flexibility, ideal for our SEO efforts. Vercel, known for its exceptional performance with NextJS projects, serves as our hosting platform.
+- Prisma for Data fetching: Prisma is an open-source database toolkit that greatly simplifies the process of querying and manipulating data. It is efficient and a real lifesaver when it comes to handling our database operations.
+- Meilisearch for Search: In a website dedicated to German proverbs, search functionality is critical. Meilisearch, with its instant, relevant, and typo-tolerant search API, has made implementing this feature a breeze.
+- Postgres as Database: PostgreSQL is a powerful, open-source object-relational database system. Its reliability, robustness, and performance make it a great choice for our backend database.
+- ChatGPT 3 & 4 for generating the content: Artificial Intelligence plays a key role in our programmatic SEO efforts. We use OpenAI's ChatGPT models 3 and 4 to generate engaging, human-like content based on the scraped data.
+- n8n for data scraping and processing: To gather data for our website, we utilize n8n, an extendable workflow automation tool. It scrapes data, sends it to ChatGPT for content generation, and indexes it into Meilisearch for efficient search functionality.
+
 # Expectations and Forward-Looking Thoughts
 As with any experiment, there are a number of unknowns. I’m interested to see how effective programmatic SEO can be in a niche like this. Will the algorithms understand and capture the nuances of German proverbs? How will the site perform in search engine rankings? How will users engage with content that's been generated programmatically?
 
