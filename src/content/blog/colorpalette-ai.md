@@ -2,7 +2,7 @@
 author: Yannick Seeger
 pubDatetime: 2023-05-20T15:43:24+02:00
 title: Launching ColorpaletteAI
-featured: true
+featured: false
 draft: false
 ogImage: ""
 description:
