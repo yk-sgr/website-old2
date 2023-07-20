@@ -31,7 +31,7 @@ The goal of Askible is to make information sharing on your server more efficient
 - /plans - Info about the available plans.
 
 ## Invite Askible
-https://discord.com/api/oauth2/authorize?client_id=1131242014286036992&permissions=0&scope=bot
+[Invite Askible](https://discord.com/api/oauth2/authorize?client_id=1131242014286036992&permissions=0&scope=bot)
 
 ## TLDR
 
